@@ -3,3 +3,8 @@ export const DIET_FACTORS = { vegan: 0.8, mixed: 1.6, meat: 3.2 } as const;
 export const ELECTRICITY_FACTOR = 0.58;
 export const SHOPPING_FACTOR = 0.04;
 export const NATIONAL_MONTH_AVERAGE = 620;
+
+export const OFFSET_FACTORS = {
+  tree: 18,
+  recycle: 0.5
+} as const;

@@ -17,7 +17,7 @@ export const useCarbonStore = create<CarbonState>((set, get) => ({
   records: [],
   offsets: [],
   badges: BADGES.map((b) => ({ ...b, unlocked: false })),
-  hydrate: async () => set({ records: await loadRecords(), offsets: await loadOffsets() })),
+  hydrate: async () => set({ records: await loadRecords(), offsets: await loadOffsets() }),
   addRecord: (record) => {
     const records = [record, ...get().records];
     saveRecords(records);
